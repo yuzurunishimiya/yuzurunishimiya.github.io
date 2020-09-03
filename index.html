@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sony</title>
 </head>
 <body>
     <div class="wrapper">
@@ -33,7 +33,6 @@
         width: 100%;
         z-index: -10;
         background-color: rgba(200, 100, 200, 0.2);
-        
     }
     .container {
         border: 1px black solid;
@@ -82,6 +81,22 @@
         background-color: rgb(231, 161 , 167);
         padding: 10px 20px;
         margin: 5px 2px;
+    }
+    @media screen and (max-width: 500px) {
+        .container {
+            margin: 2.5% 1%;
+        }
+        body {
+            background: url('assets/images/yuzuru.jpg') no-repeat right fixed;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        .container {
+            margin: 2.5% 8%;
+        }
+        body {
+            background: url('assets/images/yuzuru.jpg') no-repeat right fixed;
+        }
     }
 </style>
 
