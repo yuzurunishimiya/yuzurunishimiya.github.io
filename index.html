@@ -73,6 +73,8 @@
     .main-items {
         display: flex;
         flex-shrink: 0;
+        overflow: scroll;
+        scrollbar-width: None;
     }
     .item {
         flex: 1;
@@ -82,15 +84,22 @@
         padding: 10px 20px;
         margin: 5px 2px;
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 599px) {
         .container {
-            margin: 2.5% 1%;
+            margin: 2.5% 3%;
+        }
+        .item {
+            padding: 10px 6px;
+            text-align: center;
         }
         body {
             background: url('assets/images/yuzuru.jpg') no-repeat right fixed;
         }
     }
-    @media screen and (max-width: 1000px) {
+    @media screen
+    and (max-width: 1000px)
+    and (min-width: 600px)
+    {
         .container {
             margin: 2.5% 8%;
         }
