@@ -42,3 +42,8 @@ Object.keys(data).forEach(function(key) {
 });
 
 content.innerHTML = generateHtml;
+
+fetch("https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49")
+    .then(res => res.json())
+    .then(data=> console.log(data))
+    .catch(error => console.log(error));
